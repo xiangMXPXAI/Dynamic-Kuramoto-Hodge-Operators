@@ -1,0 +1,1 @@
+"""Spherical-cavity magnetostatics benchmark."""

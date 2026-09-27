@@ -1,0 +1,48 @@
+# Python and local tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+.idea/
+.vscode/
+
+# External datasets and frozen checkpoints are intentionally excluded from source control.
+experiments/**/data/
+experiments/**/cochains/data/
+experiments/**/figures/
+
+# Generated training, evaluation, and visualization artifacts.
+experiments/**/runs/
+experiments/**/reports/
+experiments/**/cache/
+/reports/
+
+# Local reading material.
+/algorithm_reference/
+/template_reference/
+# Local historical copies retained outside the public source tree.
+/baselines/
+
+# Experiment files that must never enter a source commit.
+*.pt
+*.pth
+*.ckpt
+*.npy
+*.npz
+*.pkl
+*.log
+*.pdf
+*.png
+*.svg
+*.jpg
+*.jpeg
+
+# Curated, lightweight figures rendered on the project home page.
+!assets/
+!assets/figures/
+!assets/figures/*.png

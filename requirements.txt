@@ -1,0 +1,13 @@
+# Core runtime used by all three DKHO benchmarks
+torch>=2.0
+numpy>=1.24
+scipy>=1.10
+scikit-learn>=1.2
+matplotlib>=3.7
+
+# Dataset construction and optional geometric visualisation
+scikit-fem>=8.0
+gmsh>=4.11
+numba>=0.57
+pyvista>=0.43
+toponetx>=0.2
