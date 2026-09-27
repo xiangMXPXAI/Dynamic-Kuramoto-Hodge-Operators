@@ -1,7 +1,5 @@
 # Dynamic Kuramoto--Hodge Operators
 
-Anonymous supplementary code for ICLR 2027.
-
 This repository contains the implementations, data-generation utilities,
 evaluation scripts, and baseline models used to study condition-adaptive
 neural operators on discrete differential forms. The code supports three
