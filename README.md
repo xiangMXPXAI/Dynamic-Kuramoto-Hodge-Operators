@@ -17,6 +17,43 @@ an internal relation state and is not a physical phase observable.
 
 ![Model schematic](assets/figures/dkho_schematic.png)
 
+## Solution Dynamics
+
+The animations below expose how a frozen DKHO checkpoint constructs its
+solution through network depth. Five exact fields are decoded: one immediately
+after form-aware encoding and one after each of the four Dirac--Kuramoto
+layers. Smooth intermediate frames are used only for visual continuity; the
+motion represents internal solution refinement, not physical PDE time or
+training progress. Small, Large, and Reference panels use the same fixed
+physical normalization for each target, while the Reference field remains
+stationary throughout the animation.
+
+<table>
+  <tr>
+    <th align="center">Perforated Darcy flow</th>
+    <th align="center">Toroidal transport</th>
+  </tr>
+  <tr>
+    <td width="50%" align="center">
+      <img src="assets/atlases/darcy_solution_atlas.gif" alt="DKHO solution refinement for Darcy potential, flux, and circulation" width="100%">
+    </td>
+    <td width="50%" align="center">
+      <img src="assets/atlases/torus_solution_atlas.gif" alt="DKHO solution refinement for toroidal concentration, transport flux, and face mass" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center">
+      <strong>Cavity magnetostatics</strong><br>
+      <img src="assets/atlases/cavity_solution_atlas.gif" alt="DKHO solution refinement for the flux-like cavity field" width="96%">
+    </td>
+  </tr>
+</table>
+
+For Darcy and toroidal transport, columns correspond to the $C^0$, $C^1$,
+and $C^2$ targets, and rows compare DKHO-Small, DKHO-Large, and the numerical
+reference. The cavity atlas presents the same comparison horizontally for its
+flux-like $C^2$ response.
+
 ## Installation
 
 The code was checked with Python 3.11.13 and PyTorch. Install the runtime

@@ -42,7 +42,9 @@ experiments/**/cache/
 *.jpg
 *.jpeg
 
-# Curated, lightweight figures rendered on the project home page.
+# Curated media rendered on the project home page.
 !assets/
 !assets/figures/
 !assets/figures/*.png
+!assets/atlases/
+!assets/atlases/*.gif
