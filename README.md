@@ -22,8 +22,7 @@ an internal relation state and is not a physical phase observable.
 The animations below expose how a frozen DKHO checkpoint constructs its
 solution through network depth. Five exact fields are decoded: one immediately
 after form-aware encoding and one after each of the four Dirac--Kuramoto
-layers. Smooth intermediate frames are used only for visual continuity; the
-motion represents internal solution refinement, not physical PDE time or
+layers. The motion represents internal solution refinement, not physical PDE time or
 training progress. Small, Large, and Reference panels use the same fixed
 physical normalization for each target, while the Reference field remains
 stationary throughout the animation.
